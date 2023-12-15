@@ -26,14 +26,7 @@ class YOLOX(nn.Module):
         self.patch_masking = False
         if self.use_patch:
             self.patch = YOLOPATCH(self.patch_masking)
-            import jhutil;jhutil.jhprint(1111, "use patch!!")
-        else:
-            import jhutil;jhutil.jhprint(2222, "don't use patch!!")
-        if self.patch_masking:
-            
-            import jhutil;jhutil.jhprint(3333, "use masking!!")
-        else:
-            import jhutil;jhutil.jhprint(4444, "don't use masking!!")
+
         self.backbone = backbone
         self.head = head
 
