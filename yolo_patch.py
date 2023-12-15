@@ -50,5 +50,3 @@ if __name__ == "__main__":
     model = YOLOPATCH(True).cuda()
     images = torch.randn(10, 3, 800, 1024).cuda()
     output = model(images)
-
-    import jhutil; jhutil.jhprint(1111, output)
